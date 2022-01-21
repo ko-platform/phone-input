@@ -1,6 +1,6 @@
 {
-  "name": "react-native-phone-number-input",
-  "version": "2.1.0",
+  "name": "@ko-platform/phone-input",
+  "version": "1.0.0",
   "description": "Phone Number Input Component",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garganurag893/react-native-phone-number-input.git"
+    "url": "git+https://github.com/ko-platform/phone-input.git"
   },
-  "author": "anuraggarg",
+  "author": "adscud",
   "license": "MIT",
   "peerDependencies": {
     "react": "*",
