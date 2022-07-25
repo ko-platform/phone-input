@@ -2,10 +2,14 @@
   "name": "@ko-platform/phone-input",
   "version": "1.0.1",
   "description": "Phone Number Input Component",
-  "main": "lib/index.js",
+  "main": "lib/commonjs/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "prepare": "bob build",
+    "release-major": "release-it -- major",
+    "release-minor": "release-it -- minor",
+    "release-patch": "release-it -- patch"
   },
   "repository": {
     "type": "git",
@@ -35,6 +39,28 @@
     "google-libphonenumber": "^3.2.10"
   },
   "devDependencies": {
-    "metro-react-native-babel-preset": "^0.61.0"
-  }
+    "metro-react-native-babel-preset": "^0.61.0",
+    "react-native-builder-bob": "^0.18.3"
+  },
+  "react-native": "src/index.js",
+  "module": "lib/module/index.js",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }
