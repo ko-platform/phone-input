@@ -1,6 +1,6 @@
 {
   "name": "@ko-platform/phone-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Phone Number Input Component",
   "main": "lib/commonjs/index.js",
   "typings": "lib/index.d.ts",
