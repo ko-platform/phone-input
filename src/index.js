@@ -183,7 +183,7 @@ export default class PhoneInput extends PureComponent {
                             countryPickerButtonStyle ? countryPickerButtonStyle : {},
 
                         ]}
-                        underlayColor={'#090909'}
+                        underlayColor={'#C5CED6'}
                         disabled={disabled}
                         onPress={() => this.setState({modalVisible: true})}
                     >
